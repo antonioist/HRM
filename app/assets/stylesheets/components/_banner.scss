@@ -4,6 +4,30 @@
   padding: 150px 0;
   height: 100%;
   position: relative;
+    .banner-strengths {
+      position: absolute;
+      // height: 200px;
+      width: 100%;
+      bottom: -16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        .banner-strengths-info {
+          background-color: white;
+          width: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .banner-strengths-info-types {
+            width: 33%;
+            text-align: center;
+            margin: 8px;
+          }
+            p {
+              color: black;
+            }
+        }
+    }
 }
 
 .banner h1 {
