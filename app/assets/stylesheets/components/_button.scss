@@ -1,0 +1,14 @@
+.button {
+  background-color: $button;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
+    &:hover {
+      text-decoration: none;
+      background-color: $hover;
+      color: white;
+    }
+}

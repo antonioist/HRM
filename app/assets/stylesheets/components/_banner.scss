@@ -1,0 +1,46 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100%;
+  position: relative;
+    .banner-strengths {
+      position: absolute;
+      // height: 200px;
+      width: 100%;
+      bottom: -16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        .banner-strengths-info {
+          background-color: rgba(255,255,255,0.7);
+          width: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .banner-strengths-info-types {
+            width: 33%;
+            text-align: center;
+            margin: 8px;
+          }
+            p {
+              color: black;
+            }
+        }
+    }
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
