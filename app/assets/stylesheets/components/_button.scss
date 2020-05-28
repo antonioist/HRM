@@ -1,5 +1,5 @@
 .button {
-  background-color: $gray;
+  background-color: $button;
   padding: 10px;
   text-decoration: none;
   text-align: center;
@@ -8,6 +8,7 @@
   border-radius: 8px;
     &:hover {
       text-decoration: none;
+      background-color: $hover;
       color: white;
     }
 }
