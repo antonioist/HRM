@@ -51,6 +51,9 @@ gem 'jquery-rails'
 gem 'rails_admin', '~> 2.0'
 gem 'cancancan'
 
+# faker
+gem 'faker'
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'

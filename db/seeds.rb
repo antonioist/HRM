@@ -5,8 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
 puts "Obliterating everthing"
 User.destroy_all
+Job.destroy_all
 puts "end"
 
 
@@ -39,6 +42,18 @@ puts "Users ready"
 
 puts "Creating Jobs"
 
+User.find_each do |user|
+  30.times do
+    Job.create!(
+      title: Faker::Job.title,
+      job_type: Faker::Job.employment_type,
+      position: Faker::Job.position,
+      salary: rand(3_000_000..8_000_000),
+      experience: ["One year", "Two years", "Three years", "Four years", "Five years", "Six years"].sample,
+      details: Faker::Job.key_skill,
+      user: user
+    )
+  end
+end
 
-
-puts "end"
+puts "jobs ready"
