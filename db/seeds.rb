@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Obliterating everthing"
+
+puts "end"
+
+
+puts "Creating Users"
+
+puts "end"
+
+puts "Creating Jobs"
+
+
+
+puts "end"

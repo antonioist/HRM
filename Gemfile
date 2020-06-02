@@ -46,6 +46,11 @@ gem 'simple_form'
 
 gem 'cloudinary', '~> 1.12.0'
 
+# multiple typo of users
+gem 'jquery-rails'
+gem 'rails_admin', '~> 2.0'
+gem 'cancancan'
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
