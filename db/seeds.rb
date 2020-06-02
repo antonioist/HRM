@@ -8,8 +8,9 @@
 require 'faker'
 
 puts "Obliterating everthing"
-User.destroy_all
 Job.destroy_all
+Information.destroy_all
+User.destroy_all
 puts "end"
 
 
@@ -38,6 +39,20 @@ isidoro = User.create!(
   password: "123123"
 )
 
+antonia = User.create!(
+  first_name: "Antonia",
+  last_name: "Trespalacios",
+  email: "antonia@lewagon.com",
+  password: "123123"
+)
+
+valeria = User.create!(
+  first_name: "Valeria",
+  last_name: "Maza",
+  email: "valeria@lewagon.com",
+  password: "123123"
+)
+
 puts "Users ready"
 
 puts "Creating Jobs"
@@ -57,3 +72,18 @@ User.find_each do |user|
 end
 
 puts "jobs ready"
+
+puts "Creating Information"
+User.find_each do |user|
+  Information.create!(
+    location: ["Meguro", "Ebisu", "Shinagawa", "Shinjuku", "Shibuya","Tokyo","Shinbashi","Ikebukuro","Daikanyama","Gotanda","Oosaki"].sample,
+    gender: ['male', 'female'].sample,
+    age: rand(24..35),
+    cover_letter: Faker::TvShows::FamilyGuy.quote,
+    job_experience: rand(1..10),
+    studies: ['IT', 'Engineer', 'Industrial Design', 'Liberal Arts', 'Law', 'Medicine'].sample,
+    user: user
+  )
+end
+
+puts "Information ready"
