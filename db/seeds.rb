@@ -8,6 +8,7 @@
 require 'faker'
 
 puts "Obliterating everthing"
+Booking.destroy_all
 Job.destroy_all
 Information.destroy_all
 User.destroy_all
@@ -87,3 +88,7 @@ User.find_each do |user|
 end
 
 puts "Information ready"
+
+puts "creating booking"
+
+puts "bokking ready"
